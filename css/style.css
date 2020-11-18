@@ -1,0 +1,52 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Goldman', cursive;
+  text-shadow: white 2px 2px 2px;
+  color: #333;
+  background-color: #ffbc32;
+  cursor: default;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  border-bottom: #333 solid 4px;
+  box-shadow: white 0 2px;
+  z-index: 10;
+  background-color: #ffbc32;
+}
+
+.header h1 {
+  text-align: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.page {
+  height: auto;
+  max-width: 100%;
+  margin: 20px;
+  margin-top: 120px;
+  position: relative;
+  border: #333 solid 4px;
+  border-radius: 80px 230px;
+  background-color: transparent;
+  box-shadow: white 4px 4px, white inset 4px 4px;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
