@@ -1,0 +1,25 @@
+.about-us {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.about-us-text {
+    flex-grow: 1;
+    padding: 80px;
+}
+
+.about-us-text h1 {
+    font-size: 100px;
+    margin: 0;
+}
+
+.about-us-text p {
+    margin: 0;
+    padding: 140px 0;
+}
+
+.about-us-img {
+    flex-grow: 1;
+}
