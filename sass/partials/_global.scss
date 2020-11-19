@@ -1,13 +1,17 @@
 body,
 html {
-    height: 100%;
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
     color: $color-dark;
     background-color: $color-main;
     cursor: default;
     scrollbar-width: none;
-    scroll-behavior: smooth;
 }
+
+html::-webkit-scrollbar {
+    display: none;
+  }
 
 h1 {
     font-family: 'Montserrat Subrayada', sans-serif;
