@@ -1,25 +1,26 @@
-.about-us {
+.what-we-do {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: nowrap;
+    flex-direction: row;
     align-items: center;
 }
 
-.about-us-text {
+.what-we-do-text {
     flex: 1 1 0;
     padding: 3vw;
 }
 
-.about-us-text p {
+.what-we-do-text p {
     margin: 0;
     padding-top: 5vw;
 }
 
-.about-us-img {
+.what-we-do-img {
     flex: 1 1 0;
 }
 
-.about-us-img img {
+.what-we-do-img img {
     width: 100%;
     height: auto;
 }

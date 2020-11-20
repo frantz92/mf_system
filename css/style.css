@@ -17,6 +17,8 @@ h1 {
   font-family: 'Montserrat Subrayada', sans-serif;
   text-shadow: white 6px 8px;
   transform: scale(1, 1.5);
+  font-size: 3vw;
+  margin: 0;
 }
 
 p {
@@ -58,7 +60,6 @@ p {
 }
 
 .container {
-  height: 70vh;
   padding: 10vh 1vw;
 }
 
@@ -77,11 +78,6 @@ p {
   -ms-flex: 1 1 0px;
       flex: 1 1 0;
   padding: 3vw;
-}
-
-.about-us-text h1 {
-  font-size: 3vw;
-  margin: 0;
 }
 
 .about-us-text p {
@@ -118,11 +114,6 @@ p {
   padding: 3vw;
 }
 
-.world-map-text h1 {
-  font-size: 3vw;
-  margin: 0;
-}
-
 .world-map-text p {
   margin: 0;
   padding-top: 5vw;
@@ -139,5 +130,39 @@ p {
 
 .places-img.is-visible {
   display: block;
+}
+
+.what-we-do {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.what-we-do-text {
+  -ms-flex: 1 1 0px;
+      flex: 1 1 0;
+  padding: 3vw;
+}
+
+.what-we-do-text p {
+  margin: 0;
+  padding-top: 5vw;
+}
+
+.what-we-do-img {
+  -ms-flex: 1 1 0px;
+      flex: 1 1 0;
+}
+
+.what-we-do-img img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */
