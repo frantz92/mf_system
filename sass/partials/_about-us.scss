@@ -6,20 +6,25 @@
 }
 
 .about-us-text {
-    flex-grow: 1;
-    padding: 80px;
+    flex: 1 1 0;
+    padding: 3vw;
 }
 
 .about-us-text h1 {
-    font-size: 100px;
+    font-size: 3vw;
     margin: 0;
 }
 
 .about-us-text p {
     margin: 0;
-    padding: 140px 0;
+    padding-top: 5vw;
 }
 
 .about-us-img {
-    flex-grow: 1;
+    flex: 1 1 0;
+}
+
+.about-us-img img {
+    width: 100%;
+    height: auto;
 }

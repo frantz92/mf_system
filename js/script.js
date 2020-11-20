@@ -4,16 +4,20 @@ document.addEventListener('scroll', function () {
     const map = document.querySelector('.world-map-img');
     if (isInViewport(map)) {
         const places = document.querySelector('.places-img');
-        places.classList.add('is-visible');
+        const world = document.querySelector('.world-img');
+        world.style.display = "none";
+        places.style.display = "block";
         if (flag == 0) {
             places.src = "images/1.gif";
             flag = 1;
         }
     }
     if (outOfViewport(map)) {
-        flag = 0;
         const places = document.querySelector('.places-img');
-        places.classList.remove('is-visible');
+        const world = document.querySelector('.world-img');
+        world.style.display = "block";
+        places.style.display = "none";
+        flag = 0;
         places.src = "";
     }
 })
