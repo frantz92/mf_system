@@ -17,10 +17,25 @@
 }
 
 .what-we-do-img {
+    position: relative;
     flex: 1 1 0;
 }
 
 .what-we-do-img img {
     width: 100%;
     height: auto;
+}
+
+.what-we-do-img > .grinder {
+    position: absolute;
+    width: 10vw;
+    bottom: 6vw;
+    left: 20vw;
+}
+
+.what-we-do-img > .drill {
+    position: absolute;
+    width: 7vw;
+    top: -9vw;
+    left: 23.5vw;
 }

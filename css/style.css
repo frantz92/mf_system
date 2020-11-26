@@ -156,6 +156,7 @@ p {
 }
 
 .what-we-do-img {
+  position: relative;
   -ms-flex: 1 1 0px;
       flex: 1 1 0;
 }
@@ -163,6 +164,20 @@ p {
 .what-we-do-img img {
   width: 100%;
   height: auto;
+}
+
+.what-we-do-img > .grinder {
+  position: absolute;
+  width: 10vw;
+  bottom: 6vw;
+  left: 20vw;
+}
+
+.what-we-do-img > .drill {
+  position: absolute;
+  width: 7vw;
+  top: -9vw;
+  left: 23.5vw;
 }
 
 .contact-us {
@@ -221,6 +236,7 @@ p {
 div[class$="-icon"] {
   margin: 5px;
   transition-duration: 0.5s;
+  width: 25vw;
 }
 
 div[class$="-icon"]:hover {

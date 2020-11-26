@@ -28,12 +28,22 @@ function animateMap() {
 }
 
 function animateIcons() {
-    let icons = document.querySelectorAll('.icon-moving');
-    let scroll = window.pageYOffset;
+    let scroll = pageYOffset;
+    let rotate = document.querySelectorAll('.icon-rotate');
+    let move = document.querySelectorAll('.icon-move');
 
-    icons.forEach(icon => {
+    rotate.forEach(icon => {
         let speed = icon.dataset.speed;
-        icon.style.transform = `rotate(${scroll * speed}deg)`;
+        icon.style.transform = `rotate(${scroll / 2 * speed}deg)`;
+    })
+
+    move.forEach(icon => {
+        let speed = icon.dataset.speed;
+        if (icon.classList.contains('icon-rotate')) {
+            icon.style.transform += `translateY(${scroll * speed}px)`;
+        } else {
+            icon.style.transform = `translateY(${scroll * speed}px)`;
+        }
     })
 }
 
