@@ -15,7 +15,7 @@ html::-webkit-scrollbar {
 
 h1 {
   font-family: 'Montserrat Subrayada', sans-serif;
-  text-shadow: white 6px 8px;
+  text-shadow: white 3px 4px;
   transform: scale(1, 1.5);
   font-size: 3vw;
   margin: 0;
@@ -40,11 +40,10 @@ p {
   background-color: #ffbc32;
 }
 
-.header h1 {
-  text-align: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  text-shadow: white 3px 3px;
+.header img {
+  display: block;
+  margin: 0 auto;
+  width: 8vh;
 }
 
 .page {
@@ -60,7 +59,7 @@ p {
 }
 
 .container {
-  padding: 10vh 1vw;
+  padding: 12vh 1vw;
 }
 
 .about-us {
@@ -102,10 +101,10 @@ p {
       justify-content: space-evenly;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
 }
 
 .world-map-text {
@@ -164,5 +163,78 @@ p {
 .what-we-do-img img {
   width: 100%;
   height: auto;
+}
+
+.contact-us {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+}
+
+.contact-us-text {
+  -ms-flex: 1 1 0px;
+      flex: 1 1 0;
+  padding: 3vw 0;
+}
+
+.contact-us-text p {
+  margin: 0;
+  padding-top: 5vw;
+}
+
+.mf-background {
+  position: relative;
+  width: 30vw;
+  height: auto;
+}
+
+.contact-us-img {
+  -ms-flex: 1 1 0px;
+      flex: 1 1 0;
+  text-align: center;
+}
+
+.mf-text {
+  position: absolute;
+  bottom: 12vh;
+  left: 8.5vw;
+  width: 31vw;
+}
+
+.contact-us-icons {
+  padding: 1vw;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 40px;
+}
+
+.contact-us-icons i {
+  margin: 5px;
+}
+
+div[class$="-icon"] {
+  margin: 5px;
+  transition-duration: 0.5s;
+}
+
+div[class$="-icon"]:hover {
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+
+.contact-us-link {
+  position: absolute;
+  width: 24vw;
+  height: 3vw;
+}
+
+.map-icon > .contact-us-link {
+  height: 7vw;
 }
 /*# sourceMappingURL=style.css.map */

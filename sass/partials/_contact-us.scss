@@ -1,13 +1,14 @@
 .contact-us {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
+    flex-direction: row-reverse;
 }
 
 .contact-us-text {
     flex: 1 1 0;
-    padding: 3vw;
+    padding: 3vw 0;
 }
 
 .contact-us-text p {
@@ -15,11 +16,51 @@
     padding-top: 5vw;
 }
 
-.contact-us-img {
-    flex: 1 1 0;
+.mf-background {
+    position: relative;
+    width: 30vw;
+    height: auto;
+
 }
 
-.contact-us-img img {
-    width: 100%;
-    height: auto;
+.contact-us-img {
+    flex: 1 1 0;
+    text-align: center;
+}
+
+.mf-text {
+    position: absolute;
+    bottom: 12vh;
+    left: 8.5vw;
+    width: 31vw;
+}
+
+.contact-us-icons {
+    padding: 1vw;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+}
+
+.contact-us-icons i {
+    margin: 5px;
+}
+
+div[class$="-icon"] {
+    margin: 5px;
+    transition-duration: 0.5s;
+}
+
+div[class$="-icon"]:hover {
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+
+.contact-us-link {
+    position: absolute;
+    width: 24vw;
+    height: 3vw;
+}
+
+.map-icon > .contact-us-link {
+    height: 7vw;
 }
