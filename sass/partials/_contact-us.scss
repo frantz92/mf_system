@@ -17,7 +17,6 @@
 }
 
 .mf-background {
-    position: relative;
     width: 30vw;
     height: auto;
 
@@ -26,12 +25,13 @@
 .contact-us-img {
     flex: 1 1 0;
     text-align: center;
+    position: relative;
 }
 
 .mf-text {
     position: absolute;
-    bottom: 12vh;
-    left: 8.5vw;
+    bottom: 0;
+    left: 8vw;
     width: 31vw;
 }
 

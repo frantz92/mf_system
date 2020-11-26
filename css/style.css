@@ -85,6 +85,7 @@ p {
 }
 
 .about-us-img {
+  position: relative;
   -ms-flex: 1 1 0px;
       flex: 1 1 0;
 }
@@ -92,6 +93,34 @@ p {
 .about-us-img img {
   width: 100%;
   height: auto;
+}
+
+.about-us-img > .welder {
+  position: absolute;
+  width: 13vw;
+  bottom: 2vw;
+  left: 4.5vw;
+}
+
+.about-us-img > .mill {
+  position: absolute;
+  width: 3.5vw;
+  top: 0;
+  left: 28vw;
+}
+
+.about-us-img > .rays {
+  position: absolute;
+  width: 1vw;
+  bottom: 14.5vw;
+  left: 3.5vw;
+}
+
+.about-us-img > .saw {
+  position: absolute;
+  width: 5.5vw;
+  top: 10.9vw;
+  left: 14vw;
 }
 
 .world-map {
@@ -180,6 +209,20 @@ p {
   left: 23.5vw;
 }
 
+.what-we-do-img > .saw {
+  position: absolute;
+  width: 6.5vw;
+  top: 14vw;
+  left: 24.5vw;
+}
+
+.what-we-do-img > .sparks {
+  position: absolute;
+  width: 1vw;
+  bottom: 20vw;
+  left: 16vw;
+}
+
 .contact-us {
   display: -ms-flexbox;
   display: flex;
@@ -205,7 +248,6 @@ p {
 }
 
 .mf-background {
-  position: relative;
   width: 30vw;
   height: auto;
 }
@@ -214,12 +256,13 @@ p {
   -ms-flex: 1 1 0px;
       flex: 1 1 0;
   text-align: center;
+  position: relative;
 }
 
 .mf-text {
   position: absolute;
-  bottom: 12vh;
-  left: 8.5vw;
+  bottom: 0;
+  left: 8vw;
   width: 31vw;
 }
 

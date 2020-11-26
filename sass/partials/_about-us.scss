@@ -16,10 +16,39 @@
 }
 
 .about-us-img {
+    position: relative;
     flex: 1 1 0;
 }
 
 .about-us-img img {
     width: 100%;
     height: auto;
+}
+
+.about-us-img > .welder {
+    position: absolute;
+    width: 13vw;
+    bottom: 2vw;
+    left: 4.5vw;
+}
+
+.about-us-img > .mill {
+    position: absolute;
+    width: 3.5vw;
+    top: 0;
+    left: 28vw;
+}
+
+.about-us-img > .rays {
+    position: absolute;
+    width: 1vw;
+    bottom: 14.5vw;
+    left: 3.5vw;
+}
+
+.about-us-img > .saw {
+    position: absolute;
+    width: 5.5vw;
+    top: 10.9vw;
+    left: 14vw;
 }

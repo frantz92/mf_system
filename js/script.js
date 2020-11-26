@@ -31,6 +31,7 @@ function animateIcons() {
     let scroll = pageYOffset;
     let rotate = document.querySelectorAll('.icon-rotate');
     let move = document.querySelectorAll('.icon-move');
+    let scale = document.querySelectorAll('.icon-scale');
 
     rotate.forEach(icon => {
         let speed = icon.dataset.speed;
@@ -43,6 +44,15 @@ function animateIcons() {
             icon.style.transform += `translateY(${scroll * speed}px)`;
         } else {
             icon.style.transform = `translateY(${scroll * speed}px)`;
+        }
+    })
+
+    scale.forEach(icon => {
+        let speed = icon.dataset.speed;
+        if (icon.classList.contains('icon-move')) {
+            icon.style.transform += `scale(${1 + scroll * speed / 500})`;
+        } else {
+            icon.style.transform = `scale(${1 + scroll * speed / 500})`;
         }
     })
 }
