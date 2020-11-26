@@ -1,6 +1,11 @@
 let flag = 0;
 
-document.addEventListener('scroll', function () {
+window.addEventListener('scroll', () => {
+    animateMap();
+    animateIcons();
+})
+
+function animateMap() {
     const map = document.querySelector('.world-map');
     if (isInViewport(map)) {
         const places = document.querySelector('.places-img');
@@ -20,7 +25,17 @@ document.addEventListener('scroll', function () {
         places.style.display = "none";
         flag = 0;
     }
-})
+}
+
+function animateIcons() {
+    let icons = document.querySelectorAll('.icon-moving');
+    let scroll = window.pageYOffset;
+
+    icons.forEach(icon => {
+        let speed = icon.dataset.speed;
+        icon.style.transform = `rotate(${scroll * speed}deg)`;
+    })
+}
 
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
