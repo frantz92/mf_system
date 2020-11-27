@@ -32,7 +32,9 @@
     "url": "https://github.com/frantz92/mf_system/issues"
   },
   "homepage": "https://github.com/frantz92/mf_system#readme",
-  "dependencies": {},
+  "dependencies": {
+    "hamburgers": "^1.1.3"
+  },
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.13",

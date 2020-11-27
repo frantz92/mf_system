@@ -8,11 +8,64 @@
     box-shadow: white 0 2px;   
     z-index: 10;
     background-color: $color-main;
-    
+    transition-duration: 0.7s;   
 }
 
 .header img {
     display: block;
     margin: 0 auto;
     width: 8vh;
+}
+
+.hamburger {    
+    position: absolute;
+    left: 5vw;
+    top: 25%;
+    outline: none;
+    color: $color-dark;
+}
+
+.menu {
+    position: absolute;
+    border: solid 2px $color-dark;
+    top: 8.5vh;
+    left: 6vw;
+    font-size: 25px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    background: $color-dark;
+    border-radius: 5% 15%;
+    color: $color-main;
+    padding: 1vw;
+    text-align: left;
+    overflow: hidden;
+    transform: translateY(-200%);
+    transition: transform 0.7s ease-in-out;
+    box-shadow: white 4px 4px, white inset 4px 4px;  
+}
+
+.menu ul {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 10px;
+    transition-duration: 0.5s;
+}
+
+.menu li:hover {
+    text-shadow:  white 2px 1px;
+    transition-duration: 0.3s;
+}
+
+.menu a {
+    color: $color-main;
+    text-decoration: none;
+    outline: none;
+}
+
+.menu li:last-of-type {
+    cursor: not-allowed;
 }

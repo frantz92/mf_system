@@ -1,9 +1,23 @@
 let flag = 0;
+let prevScrollPos = window.pageYOffset;
 
 window.addEventListener('scroll', () => {
+    hideNav();
     animateMap();
     animateIcons();
 })
+
+function hideNav() {
+    const currScrollPos = window.pageYOffset;
+    if (prevScrollPos > currScrollPos) {
+        document.getElementById("main-nav").style.top = "0";
+    } else {
+        document.getElementById("main-nav").style.top = "-20vh";
+        document.querySelector('.hamburger').classList.remove('is-active');
+        document.querySelector('.menu').style.transform = 'translateY(-200%)';
+    }
+    prevScrollPos = currScrollPos;
+}
 
 function animateMap() {
     const map = document.querySelector('.world-map');
@@ -55,6 +69,19 @@ function animateIcons() {
             icon.style.transform = `scale(${1 + scroll * speed / 500})`;
         }
     })
+}
+
+function collMenu() {
+    const hamMenu = document.querySelector('.hamburger');
+    const menuList = document.querySelector('.menu');
+
+    hamMenu.classList.toggle('is-active');
+
+    if (hamMenu.classList.contains('is-active')) {
+        menuList.style.transform = 'translateY(0)';
+    } else {
+        menuList.style.transform = 'translateY(-200%)';
+    }
 }
 
 function isInViewport(element) {

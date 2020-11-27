@@ -8,11 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" type="text/x-scss" href="/vendor/hamburgers/hamburgers.scss">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header" id="main-nav">
+        <button class="hamburger hamburger--collapse" type="button" onclick="collMenu()">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="menu">
+            <ul class="men">
+                <li><a href="#about-us">O nas</a></li>
+                <li><a href="#world-map">Gdzie</a></li>
+                <li><a href="#what-we-do">Co robimy</a></li>
+                <li><a href="#contact-us">Kontakt</a></li>
+                <li>Galeria</li>
+            </ul>
+        </div>
         <img src="images/9.png" alt="MF">
     </header>
     <div class="page">
