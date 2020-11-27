@@ -69,3 +69,17 @@
 .menu li:last-of-type {
     cursor: not-allowed;
 }
+
+.language {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    right: 5vw;
+    top: 0;
+    height: 8vh;
+}
+
+.language img {
+    margin: 10px;
+}

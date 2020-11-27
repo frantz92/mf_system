@@ -101,6 +101,23 @@ p {
   cursor: not-allowed;
 }
 
+.language {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  right: 5vw;
+  top: 0;
+  height: 8vh;
+}
+
+.language img {
+  margin: 10px;
+}
+
 .page {
   height: auto;
   max-width: 100%;

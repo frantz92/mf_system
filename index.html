@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>MF System</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
@@ -14,34 +14,33 @@
 
 <body>
     <header class="header" id="main-nav">
-        <button class="hamburger hamburger--collapse" type="button" onclick="collMenu()">
+        <button class="hamburger hamburger--collapse" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
         </button>
         <div class="menu">
-            <ul class="men">
-                <li><a href="#about-us">O nas</a></li>
-                <li><a href="#world-map">Gdzie</a></li>
-                <li><a href="#what-we-do">Co robimy</a></li>
-                <li><a href="#contact-us">Kontakt</a></li>
-                <li>Galeria</li>
+            <ul>
+                <li><a class="text-about" href="#about-us"></a></li>
+                <li><a class="text-where" href="#world-map"></a></li>
+                <li><a class="text-what" href="#what-we-do"></a></li>
+                <li><a class="text-contact" href="#contact-us"></a></li>
+                <li><a class="text-gallery" href="#gallery"></a></li>
             </ul>
         </div>
         <img src="images/9.png" alt="MF">
+        <div class="language">
+            <a class="lang-button" href="#pl"><img src="images/pl.png" alt="PL"></a>
+            <a class="lang-button" href="#fr"><img src="images/fr.png" alt="FR"></a>
+            <a class="lang-button" href="#en"><img src="images/en.png" alt="EN"></a>
+        </div>
     </header>
     <div class="page">
         <section class="container" id="about-us">
             <div class="about-us">
                 <div class="about-us-text">
-                    <h1>O NAS</h1>
-                    <p>
-                        Firmę „MF System” założono w 2006 roku w Polsce, jako przedstawicielstwo francuskiej firmy
-                        „Eurotechnique”, która istniała od 1998 roku na arenie międzynarodowej. Firma posiada
-                        wieloletnie doświadczenie wykonując wszelkie prace związane z przemysłem. Wszędzie gdzie
-                        pracowaliśmy daliśmy się poznać jako firma rzetelna, profesjonalna, solidna i terminowo
-                        wykonująca swoje obowiązki. Na wykonywane przez nas prace udzielamy rękojmi i gwarancji.
-                    </p>
+                    <h1 class="text-about"></h1>
+                    <p class="text-aboutUs"></p>
                 </div>
                 <div class="about-us-img">
                     <img class="mill icon-move" src="images/12.png" data-speed="0.2" alt="Mill">
@@ -55,13 +54,8 @@
         <section class="container" id="world-map">
             <div class="world-map">
                 <div class="world-map-text">
-                    <h1>GDZIE PRACOWALIŚMY</h1>
-                    <p>
-                        Nasz team pojawił się w ponad 20 państwach na 4 rónych kontynentach współpracując z największymi
-                        firmami m.in. PSA Peugeot Citroën, Airbus France, Cotumer, Disneyland Resort Paris, PSA Renault
-                        Automobiles, Mecalux, RATP, Bombardier, Cargotec, Stolz, Safran, KSB, Gamatt, Stow
-                        Polska, Deltreil, Eriem, Boccard, Alliages France, Mecanyvois, Atlantique Maintenance
-                    </p>
+                    <h1 class="text-where"></h1>
+                    <p class="text-whereWeDo"></p>
                 </div>
                 <div class="world-map-img">
                     <img class="world-img" src="images/4.png" alt="World">
@@ -72,7 +66,7 @@
         <section class="container" id="what-we-do">
             <div class="what-we-do">
                 <div class="what-we-do-text">
-                    <h1>CO ROBIMY</h1>
+                    <h1 class="text-what"></h1>
                     <p>
                         Nasz team pojawił się w ponad 20 państwach na 4 rónych kontynentach współpracując z największymi
                         firmami m.in. PSA Peugeot Citroën, Airbus France, Cotumer, Disneyland Resort Paris, PSA Renault
@@ -92,7 +86,7 @@
         <section class="container" id="contact-us">
             <div class="contact-us">
                 <div class="contact-us-text">
-                    <h1>KONTAKT</h1>
+                    <h1 class="text-contact"></h1>
                     <div class="contact-us-icons">
                         <div class="env-icon">
                             <a class="contact-us-link" href="mailto: mfsystem@wp.pl"></a>
@@ -125,7 +119,7 @@
         </section>
 
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" type="module"></script>
 </body>
 
 </html>

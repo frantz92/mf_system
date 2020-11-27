@@ -1,3 +1,5 @@
+import { language } from './db.js';
+
 let flag = 0;
 let prevScrollPos = window.pageYOffset;
 
@@ -99,3 +101,31 @@ function outOfViewport(element) {
         rect.bottom < 0
     );
 }
+
+const langButtons = document.querySelectorAll('.lang-button');
+const menuButton = document.querySelector('.hamburger');
+
+window.location.hash = '#pl';
+const plLang = 'pl'
+fillText(plLang);
+
+langButtons.forEach(lang => {
+    lang.addEventListener('click', () => {
+        if (window.location.hash != lang.hash) {
+            const key = lang.hash.substring(1);
+            fillText(key);
+        }
+    })
+})
+
+function fillText(key) {
+    const textContainers = document.querySelectorAll('[class^="text-"');
+    textContainers.forEach(txt => {
+        const name = txt.className.substring(5);
+        txt.textContent = language[key][name];
+    })
+}
+
+menuButton.addEventListener('click', () => {
+    collMenu();
+})
